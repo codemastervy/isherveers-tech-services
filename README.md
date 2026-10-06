@@ -36,12 +36,16 @@ connect a real one:
 
 ### 2. Add real photos
 
-Three places currently show a dashed placeholder box instead of a photo:
+`3d-printing.html`'s three past-project photos are pulled directly from
+[Isherveer's MakerWorld profile](https://makerworld.com/en/@Isherveer/upload)
+(hotlinked, so they stay in sync if those listings are ever updated — add
+new MakerWorld uploads to the page the same way). As more jobs are designed
+and printed that aren't MakerWorld uploads, add a new `.case` block with
+your own photo.
 
-- `drone-photography.html` — three aerial shot slots (`aerial-01.jpg`, etc.)
-- `3d-printing.html` — one slot per past project (`cotton-pad-lid.jpg`, etc.)
-
-To swap one in:
+`drone-photography.html` still shows three dashed placeholder boxes for
+aerial shots (`aerial-01.jpg`, etc.) since there's no real aerial work to
+show yet. To swap one in:
 
 1. Put the image file in `assets/img/` (already created, currently empty).
 2. In the relevant `.html` file, find the matching `<div class="photo-slot">`
