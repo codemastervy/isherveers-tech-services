@@ -12,27 +12,20 @@ Plain HTML/CSS/JS — no build step, no framework.
 | `it-support.html` | Computer / IT support |
 | `drone-photography.html` | Drone aerial photography |
 | `3d-printing.html` | Custom 3D printing |
-| `contact.html` | Contact — Facebook, email, and a job-request form slot |
+| `contact.html` | Contact — Facebook, email, and an embedded job-request form |
 
 All pages share `style.css` (every colour, font, and layout rule) and
 `script.js` (just the mobile menu toggle).
 
 ## First things to do before this goes live
 
-### 1. Connect the Google Form
+### 1. Google Form
 
-`contact.html` has a clearly marked placeholder where the form goes. To
-connect a real one:
-
-1. Build the form at [forms.google.com](https://forms.google.com) — fields
-   like name, contact details, which service, location, and a description
-   of the job work well.
-2. In the form editor: **Send** → click the **`<>`** (embed) icon → copy the
-   `<iframe ...>` code it gives you.
-3. Open `contact.html`, find the comment block that says `TO ENABLE:`, and
-   replace the placeholder `<div class="form-frame">...</div>` directly
-   below it with your copied `<iframe>`, keeping it wrapped in
-   `<div class="form-frame">...</div>` so it picks up the site's styling.
+Done — `contact.html` already embeds the live "Job Request" Google Form
+(owned by `dailyvloggerstudios@gmail.com`), and email notifications are on
+for new responses. To edit the questions, open the form at
+[docs.google.com/forms](https://docs.google.com/forms) under that account;
+changes there show up on the site automatically since it's just embedded.
 
 ### 2. Add real photos
 
@@ -59,7 +52,7 @@ show yet. To swap one in:
 
 ### 3. Double-check the contact details
 
-`isherveer@gmail.com` and the Facebook Messenger link
+`dailyvloggerstudios@gmail.com` and the Facebook Messenger link
 (`facebook.com/isherveer`) are used throughout. Update them in each `.html`
 file (search for the old value, replace everywhere it appears) if either
 ever changes.
