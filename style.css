@@ -114,9 +114,20 @@ section.tight { padding: 36px 0; }
 }
 .wordmark {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   text-decoration: none;
   line-height: 1;
+}
+.wordmark-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border: 1.5px solid var(--line-strong);
+}
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
 }
 .wordmark .name {
   font-family: var(--font-display);
